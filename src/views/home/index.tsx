@@ -1,5 +1,12 @@
 import LayoutComponent from "@/layout/default";
+import styles from "./index.less";
 
 export default () => {
-  return <LayoutComponent name="121212">232323</LayoutComponent>;
+  return (
+    <div class={styles.home}>
+      <LayoutComponent name="121212">
+        <div class={styles.containerTest21212}>1212</div>
+      </LayoutComponent>
+    </div>
+  );
 };
