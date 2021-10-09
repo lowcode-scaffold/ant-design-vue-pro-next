@@ -1,11 +1,11 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
+import Layout from "@/layout/default";
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
-    name: "Home",
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/home/index"),
+    name: "Layout",
+    component: Layout,
   },
 ];
 
